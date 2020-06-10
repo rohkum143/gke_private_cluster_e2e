@@ -1,0 +1,5 @@
+subnetwork_range = "192.168.0.0/20"
+project = "rohtash-260709"
+cluster_name = "gke-e2e-demo"
+cluster_zone = "us-west1-a"
+network = "gke-net-1"
