@@ -19,3 +19,13 @@ terraform {
 }
 
 ############### Backend End ######################
+
+resource "google_folder" "base_folder" {
+  display_name = var.name
+  parent       = var.base-folder
+}
+
+resource "google_folder" "core_folder" {
+  display_name = "control-plane"
+  parent       = google_folder.base_folder.name
+}
